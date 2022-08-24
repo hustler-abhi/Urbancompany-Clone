@@ -1,12 +1,31 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#page_layout{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+}
 #page_container{
     width: 50vw;
     margin: auto;
 }
+@font-face {
+    /* font-family: Sauce_Grotesk_Light;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Light.ttf"); */
+    font-family: Sauce_Grotesk;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Regular.ttf");
+}
+nav{
+    /* margin-top: 30px; */
+}
 #header{
-    margin-top: 2.5rem;
+    width:100%;
+    margin: auto;
 }
 #header>a{
-    margin:6rem 0;
+    /* margin:6rem 0; */
 }
 i.custom{
     color: var(--primary_grey);
@@ -14,14 +33,49 @@ i.custom{
     font-size: 1.6rem;
 }
 #plusDetails{
-    margin-top: 4rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
 }
 #plusDetails>img{
-    width:15vw;
+    width:144px;
+    /* height:72px; */
 }
 
 #plusDetails>div{
+    width:100%;
+    margin: auto;
     font-size:2.4rem;
-
+    font-family: Sauce_Grotesk;
+    font-weight: 700;
+    color: var(--primary_grey);
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
 }
+#subOffer{
+    display: flex;
+    /* font-family: Sauce_Grotesk_Light; */
+}
+#subOffer>img{
+    margin-right: 1rem;
+}
+#subOffer>span{
+    font-size: 1.4rem;
+    font-family: Sauce_Grotesk;
+    color: var(--primary_green);
+}
+
+#body{
+    display: flex;
+}
+#benefitsColumn{
+    margin-right: 32px;
+    width: 640px;
+    background-color: azure;
+}
+#planSelectorColumn{
+    width: 448px;
+    background-color: aliceblue;
+}
+
 

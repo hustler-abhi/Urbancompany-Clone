@@ -9,27 +9,34 @@
     </title>
     <link rel="stylesheet" href="./Styles/CSSTemplate.css">
     <link rel="stylesheet" href="./Styles/subscription.css">
+    <link rel="stylesheet" media="all and (max-width:820px) and (min-width: 426px)" href="./Styles/subscriptionMedium.css">
+    <link rel="stylesheet" media ="all and (max-width:425px)" href="./Styles/subscriptionSmall.css">
     <link rel="icon" href="./Images/urbanlogo.png" />
     <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
   </head>
   <body>
     <div id="page_layout">
       <div id="page_container">
-        <div id="header">
-            <!-- arrow_back -->
+        <nav>
             <a href="check.html">
                 <i class = "material-icons custom">west</i>
-                <!-- <img src="./Images/arrow_back.svg"></img> -->
             </a>
+        </nav>
+        <div id="header">
             <div id="plusDetails">
                 <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,w_144,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1626353785493-75ebc7.png">
                 <div>Save 15% on every order for just ₹99 extra</div>
                 <!-- <img id = "circle" src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,w_150,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1626412070305-a18abb.png" alt=""> -->
             </div>
-            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,w_20,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1627582398810-cd7baa.png" alt="">
-            <span>You will save ₹150 on this order</span>
+            <div id="subOffer">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,w_20,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1627582398810-cd7baa.png" alt="">
+                <span>You will save ₹150 on this order</span>
+            </div>
         </div>
-        <div id="body"></div>
+        <div id="body">
+            <div id="benefitsColumn">A</div>
+            <div id="planSelectorColumn">B</div>
+        </div>
       </div>
     </div>
   </body>
