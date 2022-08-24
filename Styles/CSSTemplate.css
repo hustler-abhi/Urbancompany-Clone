@@ -1,0 +1,53 @@
+:root{
+    font-size: 62.5%;
+    --purple: rgb(110, 66, 229);
+    --light_purple:rgb(237, 237, 237);
+    --primary_green: rgb(7, 121, 76);
+    --secondary_green: rgb(36, 163, 70);
+    --light_green: #edf7f2;
+    --primary_grey: #0f0f0f;
+    --secondary_grey: #757575;
+    --light_grey: #f5f5f5;
+    /* Use white wherever it is required. Use black only on Homepage. In most other places it is --primary_grey. */
+}
+
+body{
+    font-size: 1.6rem;
+    /* Now you can use rem instead of px as follows: 
+    1. for 16px use 1.6rem 
+    2. for 24px use 2.4rem  */
+}
+.btn_purple{
+    background-color: var(--purple);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2.4rem;
+    border-radius: 0.8rem;
+}
+.btn_white{
+    background-color: white;
+    color: var(--purple);
+    font-weight: 600;
+    box-shadow: rgb(15 15 15 / 6%) 0px 4px 8px;
+    border: 1px solid var(--light_purple);
+    padding: 1rem 2.4rem;
+    border-radius: 0.8rem;
+}
+.btn_white_active{
+    background-color: var(--light_purple);
+    color: var(--purple);
+    box-shadow: rgb(15 15 15 / 6%) 0px 4px 8px;
+    font-weight: 600;
+    border: 1px solid var(--purple);
+    padding: 1rem 2.4rem;
+    border-radius: 0.8rem;
+}
+.btn_grey{
+    background-color: var(--light_grey);
+    color: var(--secondary_grey);
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2.4rem;
+    border-radius: 0.8rem;
+}
