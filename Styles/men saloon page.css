@@ -1,14 +1,28 @@
 #header{
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
-    width:80%;
-    margin: auto;
+    
+   
+   
 }
 #header>div{
     display: flex;
     gap: 20px;
-   height: 9vh;
-   
+   width: 15vw;
+   justify-content: space-between;
+   height: 8vh;
+  
+  
 }
 
+#header>div>img{
+    height:5vh;
+    margin:auto;
+}
+body{
+    width:75%;
+    margin: auto;
+}
+#banner{
+    display: flex;
+}
