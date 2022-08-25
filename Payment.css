@@ -1,0 +1,234 @@
+body {
+    background-color: #D3D3D3;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 35vw;
+    background-color: white;
+    margin: auto;
+    margin-top: -10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    position: fixed;
+    top: 10px;
+    left: 32%;
+ 
+}
+
+#leftArrow {
+    padding: 5PX 20px;
+}
+
+#payMode {
+    display: flex;
+}
+
+#nav1>h2 {
+    margin-bottom: -10px;
+}
+
+#container {
+    align-items: center;
+    width: 35vw;
+    background-color: #F5F5F5;
+    margin: auto;
+    margin-top: -18px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-top: 88px;
+    
+}
+
+.main {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    height: 120px;
+    background-color: white;
+    margin-left: -8px;
+}
+
+.main>h3 {
+    padding-top: 20px;
+}
+
+#paytm1 {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#paytm1>img {
+    width: 5%;
+    padding-right: 10px;
+
+}
+
+#paytm1>svg {
+    padding-top: 15px;
+    padding-left: 350px;
+
+}
+
+
+
+#wallet1 {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#wallet1>img {
+    width: 5%;
+    padding-right: 10px;
+}
+
+#wallet1>svg {
+    padding-top: 15px;
+    padding-left: 380px;
+
+}
+
+
+#upi {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#upi>img {
+    width: 5%;
+    padding-right: 10px;
+}
+
+#upi>svg {
+    padding-top: 15px;
+    padding-left: 270px;
+
+}
+
+
+#netbank {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#netbank>img {
+    width: 5%;
+    padding-right: 10px;
+}
+
+#netbank>svg {
+    padding-top: 15px;
+    padding-left: 330px;
+
+}
+
+#cash {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#cash>svg {
+    padding-top: 15px;
+    padding-left: 295px;
+
+}
+
+.popup-overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+
+}
+
+.popup{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+
+.popup .popup-close-btn{
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color:  #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+ 
+ }
+ body.popup-active .popup {
+     top: 50%;
+ }
+ body.popup-active .popup.overlay{
+    display: block;
+ }
+
+ .popup>h3{
+    text-align: left;
+    margin-top: 0px;
+}
+#cardNum{
+    display: flex;
+    justify-content: flex-start;
+    width: 30vw;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    border: 0.1px solid #B22222;
+    border-radius: 10px;
+    padding: 15px;
+}
+.float{
+    display: flex;
+    justify-content: flex-start;
+}
+.float>input{
+    font-size: 12px;
+    text-align: left;
+    margin-right: 20px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0px solid;
+    padding: 15px;
+
+}
+#checkbox{
+    display: flex;
+    justify-content: flex-start;
+}
+#confirm{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#submit{
+    background-color: gray;
+    border-radius: 10px;
+    border: 0px solid;
+    margin-right: 20px;
+}
