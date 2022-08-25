@@ -1,0 +1,10 @@
+#page_layout{
+    /* padding: 1rem; */
+}
+#page_container{
+    width: 90vw;
+    margin: 1.5rem;
+}
+#body{
+    flex-direction: column-reverse;
+}
