@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Payment.css"/>
+    <title>Payment Page</title>
+  
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="leftArrow">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+            </svg>
+        </div>
+        <div ID="nav1">
+            <h2>Select Payment Method</h2>
+            <div id="payMode">
+                <p id="payhead">Amount to pay rs:</p>
+                <h3 id="payAmt"></h3>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="container">
+        <div class="main">
+            <h3>Debit or Credit Card</h3>
+            <div id="paytm1">
+                <img
+                    src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_1.25/images/monet/customer-app-monet/1622015769641-3fc187.png" />
+                <p>Add a Card</p>
+                
+            </div>
+        </div>
+        <div class="popup">
+            <h3>Add new card</h3>
+            <input id="cardNum" type="text" maxlength="19" onkeypress="cardspace()" placeholder="Card Number"/>
+            <div class="float">
+                <input id="validtill" type="text" maxlength="7" onkeypress="addslaches()" placeholder="MM/YY"/>
+                <input id="cvv" type="text" maxlength="3" placeholder="CVV"/>
+            </div>
+            <div id="checkbox">
+                <input id="checkbox1" type="checkbox" />
+                <p>Save the card details for future use except CVV</p>
+    
+            </div>
+            <div id="confirm">
+                <h3 id="payAmt"></h3>
+                <button id="submit">save and proceed</button>
+            </div>
+            <div class="popup-close-btn" >&times</div>
+        </div>
+        
+        <div class="main">
+            <h3>Wallet</h3>
+            <div id="wallet1">
+                <img
+                    src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_2.0000000298023224/images/monet/customer-app-monet/1622035139912-c6c7d1.png" />
+                <p>Paytm</p>
+                
+            </div>
+        </div>
+
+        <div class="main">
+            <h3>UPI</h3>
+            <div id="upi">
+                <img
+                    src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_1.25/images/monet/customer-app-monet/1622035138755-c9ea9d.png" />
+                <p>Pay via another UPI ID</p>
+                
+            </div>
+        </div>
+
+        <div class="main">
+            <h3>Netbanking</h3>
+            <div id="netbank">
+                <img
+                    src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_1.25/images/monet/customer-app-monet/1622015760056-139840.png" />
+                <p>See All Banks</p>
+                
+            </div>
+        </div>
+
+        <div class="main">
+            <h3>Pay after services</h3>
+            <div id="cash">
+                <p>Pay online after services</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="Payment.js"></script>
