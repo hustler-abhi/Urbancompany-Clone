@@ -4,54 +4,157 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="/Styles/index.css" />
   </head>
   <body>
-    <!-- 1. Navbar -->
+    <!-- Navbar -->
 
     <div id="navbar">
-      <div>
+      <div id="logo">
         <img
           src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
           alt=""
         />
       </div>
-      <div>
-        <div><h3>Blog</h3></div>
-        <div>
-          <h3><a href="">Registered as a Professional</a></h3>
-        </div>
-        <div><h3>Login/Signup</h3></div>
+      <div id="box">
+        <div>Blog</div>
+        <div><a href="">Register as a Professional</a></div>
+        <div>Login/Signup</div>
       </div>
     </div>
 
-    <!-- Banner Part -->
+    <!-- Banner Section -->
 
     <div id="banner">
-      <div>
+      <div id="ban-image">
+        <div id="back"></div>
         <img
+          id="image"
           src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg"
           alt=""
         />
       </div>
-      <div>
-        <div class="banrightchild">
-          <span>URBAN COMPANY</span>
-          <h1>Quality home services, on demand</h1>
+      <div id="ban-right">
+        <div id="section">
+          <div><span>URBAN COMPANY</span></div>
+
+          <h1>Quality Home Services, on Demand</h1>
           <p>
-            Experienced, hand-picked Professionals to serve you at your doorstep
+            Experienced, Hand picked Professionals to serve you at your door
+            step
           </p>
-        </div>
-        <div class="banrightchild">
-          <p>Where do you need a service?</p>
-          <div>
-            <div><p>Select your City</p></div>
+          <div id="loc-div">
+            <p>Where do you need a service?</p>
+            <select name="" id="select">
+              <option value="" disabled selected hidden>
+                Select your city
+              </option>
+            </select>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mid Section -->
+
+    <div id="cont">
+      <div id="mid1">
+        <h1>Why Urban Company</h1>
+        <div id="list">
+          <ul type="none">
+            <li>
+              <div>
+                <img
+                  src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png"
+                  alt=""
+                />
+              </div>
+              <section>
+                <h3>Transparent pricing</h3>
+                <p>See fixed prices before you book.</p>
+              </section>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2cc7d0d0.png"
+                  alt=""
+                />
+              </div>
+              <section>
+                <h3>Experts only</h3>
+                <p>
+                  Our professionals are well trained and have on-job expertise.
+                </p>
+              </section>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2caafa00.png"
+                  alt=""
+                />
+              </div>
+              <section>
+                <h3>Fully equipped</h3>
+                <p>We bring everything needed to get the job done well.</p>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mid2">
+        <div>
+          <div>
+            <img
+              src="https://res.cloudinary.com/urbanclap/image/upload/q_20,f_auto/categories/category_v2/category_cb4d9130.png "
+              alt=""
+            />
+          </div>
+          <h1>100% Quality Assured</h1>
+          <p>If you don’t love our service, we will make it right.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bot">
+      <div>
+        <div>
+          <h1>Book Professionals from your Phone</h1>
+          <p>Enter Your mobile number to get App Download link</p>
+          <div id="phone">
+            <div>
+              <img
+                src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"
+                alt=""
+              />
+              <h3>+91</h3>
+            </div>
+
+            <div>
+              <input type="text" />
+            </div>
+            <div>
+              <button>send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="andimg">
+        <div>
+          <img
+            src="https://res.cloudinary.com/urbanclap/image/upload/w_300,f_auto/categories/category_v2/category_2d7045d0.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/urbanclap/image/upload/w_350,f_auto/categories/category_v2/category_2d013050.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
   </body>
 </html>
-
-<script src="index.js"></script>
