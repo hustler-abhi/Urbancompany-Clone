@@ -1,14 +1,84 @@
 #header{
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
-    width:80%;
-    margin: auto;
+    
+   
+    
 }
 #header>div{
     display: flex;
     gap: 20px;
-   height: 9vh;
+   height: 8vh;
+   
+   width:18vw;
+   justify-content: space-between;
    
 }
+#header>div>img{
+    width:20%;
+    height: 5vh;
+    margin: auto;
+}
+body{
+    width:75%;margin: auto;
+}
+span{
+    color:gray
+}
+#banner{
+    display: flex;
+    border: 2px solid blue;
+  justify-content: space-around;
+  
+}
+#banner>div{
+    border:2px solid green;
+   margin: auto; 
+    margin-left: 0px;
+   
+}
+#banner>div:nth-child(2)>img{
+height: 45vh;
+width: 40vw;
+border-radius: 10px;
+margin-right: -150px;
+}
+#banner>div>h1{
+    font-size: 40px;
+    
+}
+#banner>div>div{
+    border:1px solid black;
+    width:5vw;
+    border-radius: 5px;
+}
+#navbar{
+    display: flex;
+   
 
+}
+#navbar>div{
+    
+    width:6vw;
+    text-align: center;
+   
+}
+#navbar>div>img{
+    border-radius: 5px;
+}
+#container{
+    display: flex;
+    border: 1px solid green;
+
+}
+#container>div{
+    
+    border: 1px solid blue;
+    justify-content: center;
+}
+#container>div>div{
+    border:1px solid red;
+
+
+
+}
