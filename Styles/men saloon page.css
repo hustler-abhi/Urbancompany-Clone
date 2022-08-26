@@ -3,16 +3,24 @@
     justify-content: space-between;
     
    
-    
+
 }
 #header>div{
     display: flex;
     gap: 20px;
+
    height: 8vh;
    
    width:18vw;
    justify-content: space-between;
    
+
+   width: 15vw;
+   justify-content: space-between;
+   height: 8vh;
+  
+  
+
 }
 #header>div>img{
     width:20%;
@@ -78,6 +86,7 @@ margin-right: -150px;
 }
 #container>div>div{
     border:1px solid red;
+
 
 
 

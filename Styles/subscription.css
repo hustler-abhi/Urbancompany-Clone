@@ -1,12 +1,31 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#page_layout{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+}
 #page_container{
     width: 50vw;
     margin: auto;
 }
+@font-face {
+    /* font-family: Sauce_Grotesk_Light;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Light.ttf"); */
+    font-family: Sauce_Grotesk;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Regular.ttf");
+}
+nav{
+    /* margin-top: 30px; */
+}
 #header{
-    margin-top: 2.5rem;
+    width:100%;
+    margin: auto;
 }
 #header>a{
-    margin:6rem 0;
+    /* margin:6rem 0; */
 }
 i.custom{
     color: var(--primary_grey);
@@ -14,14 +33,209 @@ i.custom{
     font-size: 1.6rem;
 }
 #plusDetails{
-    margin-top: 4rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
 }
 #plusDetails>img{
-    width:15vw;
+    width:144px;
+    /* height:72px; */
 }
 
 #plusDetails>div{
+    width:100%;
+    margin: auto;
     font-size:2.4rem;
-
+    font-family: Sauce_Grotesk;
+    font-weight: 700;
+    color: var(--primary_grey);
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+}
+#subOffer{
+    display: flex;
+    /* font-family: Sauce_Grotesk_Light; */
+}
+#subOffer>img{
+    margin-right: 1rem;
+}
+#subOffer>span{
+    font-size: 1.4rem;
+    font-family: Sauce_Grotesk;
+    color: var(--primary_green);
 }
 
+#body{
+    display: flex;
+    margin-top: 2rem;
+    font-family: Sauce_Grotesk;
+}
+#benefitsColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 32px;
+    width: 60vw;
+    /* background-color: azure; */
+}
+#planSelectorColumn{
+    width: 40vw;
+    background-color: aliceblue;
+}
+.divider{
+    background-color: var(--light_grey);
+    width: 100%;
+    height: 0.8rem;
+    /* border: 1px solid green; */
+    margin: 0.75rem 0 2rem;
+}
+
+#other_benefits{
+    width: 100%;
+}
+
+#other_benefits>p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--primary_grey);
+}
+
+.icon_benefits{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+.icon_benefits>img{
+    height: 36px;
+}
+
+.benefit_title{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.benefit_desc{
+    font-size: 1rem;
+    color: var(--secondary_grey);
+}
+#savings>div>div>p:first-child{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary_grey);
+}
+
+#savings>div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#amt_saved{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--primary_green);
+    margin-bottom: 2rem;
+}
+
+#number_services>p{
+    color: var(--primary_grey);
+    font-weight: 300;
+    font-size: 1.4rem;
+    /* margin-bottom: 1rem; */
+}
+
+#number_btns{
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.number_btn{
+    width: 36px;
+    height: 36px;
+    margin: 0.1rem;
+    color: var(--secondary_grey);
+    /* padding: 12px; */
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+#number_services>div:last-child{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+}
+
+#number_services>div:last-child>p{
+    color: var(--secondary_grey);
+    font-size: 1.4rem;
+}
+
+#plusContainer{
+    display: grid;
+    gap:1rem;
+    margin: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.plusBox{
+    border-radius: 5px;
+    padding: 2rem;
+    /* border: 1px solid green; */
+}
+
+.plusBox>p:nth-child(2){
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary_grey);
+}
+
+.plusBox>p:nth-child(3){
+    font-size: 1.2rem;
+    color: var(--secondary_grey);
+}
+
+.box_green{
+    background-color: #EDF7F2;
+}
+.box_purple{
+    background-color: #F2F0FF; 
+}
+.box_yellow{
+    background-color: #FFF7D6;
+}
+.box_brown{
+    background-color: #FDF3F2;
+}
+#review{
+    margin-bottom: 2rem;
+}
+#review>p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--primary_grey); 
+}
+
+.load_review_btn{
+    padding: 1rem;
+    position: relative;
+    left: 11vw;
+    font-weight: 600;
+    font-family: Sauce_Grotesk;
+    color: var(--primary_grey);
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+}
+
+#FAQs>p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--primary_grey); 
+}
