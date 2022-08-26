@@ -1,15 +1,7 @@
-let cityArr = ["Bangalore", "Hyderabad", "Pune", "Kolkata", "Chandigarh"];
+function myLocation() {
+  let selected = document.getElementById("select").value;
 
-let selected = document.getElementById("select");
+  localStorage.setItem("location", selected);
 
-function append() {
-  let div = document.createElement("div");
-
-  cityArr.forEach(function (el, i) {
-    let citylist = document.createElement("div");
-    citylist.innerText = el;
-
-    div.append(citylist);
-  });
-  selected.append(div);
+  window.location.href = "homepage.html";
 }
