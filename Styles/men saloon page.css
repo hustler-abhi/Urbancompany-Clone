@@ -141,6 +141,7 @@ border-radius: 10px;
     width:50%;
    height: 100%;
 border: 2px solid red;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #cont1{
     display:grid;
@@ -148,9 +149,58 @@ border: 2px solid red;
 
    
 }
-#cont1>div{
-   
-    
-    height: 100%;
-  
+#middle{
+    display: flex;
 }
+#middle>div{
+    border:2px solid lightcoral;
+    width:50%;
+    height:400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+#middle>div>h1{
+    width:70%;
+    margin: auto;
+    line-height: 50px;
+    margin-top: 30px;
+}
+#middle>div>p{
+    width:70%;
+    margin: auto;
+    line-height: 25px;
+}
+/* #cont1>div:first-child{
+   border-right: 1px solid grey;
+    /* line-height: 10px; */
+    /* height: 100%; */
+  
+#end>div{
+    width:50%
+}
+
+#footer{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-color: rgb(233, 228, 228);
+    height:400px;
+    padding: 10px;
+
+}
+#footer>div{
+    
+    display: flex;
+   
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#footer>div>div{
+    border: 1px solid red;
+}
+#footer>div>div>p{
+    color: grey;
+}
+/* #footer>img{
+    width:20%;
+    height:20%
+} */

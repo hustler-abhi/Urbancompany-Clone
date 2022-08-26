@@ -9,7 +9,9 @@ let menssalon=[
     "description":"Clean Shave/ Moustache Grooming",
     "desc2":"Men's Haircut",
     "package":"PACKAGE",
-    'heading':'Packages'
+    'heading':'Packages',
+     'buttonadd':'Add'
+
     },
     {
     "name":"Haircut + Beard grooming + Free 10 min head massage",
@@ -19,7 +21,8 @@ let menssalon=[
     "free":"Get Free",
     "description":"Men's Haircut",
     "desc2":"Beard Shape & Style",
-    "package":"PACKAGE"
+    "package":"PACKAGE",
+    'buttonadd':'Add'
     },
     {
     "name":"Haircut + Massage",
@@ -29,7 +32,7 @@ let menssalon=[
     "description":"Men's Haircut",
     "desc2":"20 min Head Massage",
     "editpackage":"Edit your package",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Father & Kid's Haircut",
@@ -40,7 +43,7 @@ let menssalon=[
     "desc2":"Kids Haircut (Boys)",
     "editpackage":"Edit your package",
     "desc3":"Kids Haircut (Boys)",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Haircut + Face Care",
@@ -50,7 +53,7 @@ let menssalon=[
     "description":"Face & Neck Detan Pack",
     "desc2":"Men's Haircut",
     "editpackage":"Edit your package",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Haircut + Hair Color",
@@ -60,7 +63,7 @@ let menssalon=[
     "description":"Garnier Color Naturals",
     "desc2":"Men's Haircut",
     "editpackage":"Edit your package",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Make Your Own Package",
@@ -70,7 +73,7 @@ let menssalon=[
     "description":"Beard Shape & Style",
     "desc2":"Garnier Color Naturals",
     "editpackage":"Edit your package",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Haircut for Men",
@@ -79,14 +82,14 @@ let menssalon=[
     "time":"30 mins",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1651735873259-9ad829.png",
     "package":"BESTSELLER",
-    'heading':'HairCut For Men & Kids'
+    'heading':'HairCut For Men & Kids', 'buttonadd':'Add'
     },
     {
     "name":"Haircut for 2",
     "rating":"4.85 (18.2K)",
     "price":"₹399",
     "time":"60 mins",
-    "desc2":"Pack of 2 Haircut for Men",
+    "desc2":"Pack of 2 Haircut for Men", 'buttonadd':'Add',
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1658988755105-b14f5c.png"
     },
     {
@@ -97,7 +100,7 @@ let menssalon=[
     "description":"No more hassle of managing kids outside, safe haircut at home",
     "desc2":"Expert child stylists for a mess free experience with child friendly equipment",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/home-screen/1616494759820-956198.jpeg",
-    "package":"FOR 3-12 YEARS BOYS"
+    "package":"FOR 3-12 YEARS BOYS", 'buttonadd':'Add'
     },
     {
     "name":"Haircut + Beard Grooming + Massage",
@@ -108,7 +111,7 @@ let menssalon=[
     "desc2":"10 min Head Massage",
     "editpackage":"Edit your package",
     "desc3":"10 min Head Massage",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Father & Kid's Haircut",
@@ -119,14 +122,14 @@ let menssalon=[
     "desc2":"Kids Haircut (Boys)",
     "editpackage":"Edit your package",
     "desc3":"Kids Haircut (Boys)",
-    "package":"PACKAGE"
+    "package":"PACKAGE", 'buttonadd':'Add'
     },
     {
     "name":"Hair Color with Product",
     "rating":"4.82 (1.7K)",
     "price":"Starts at ₹299",
     "package":"AMMONIA-FREE PRODUCTS",
-    'heading':'Hair Color',
+    'heading':'Hair Color', 'buttonadd':'Add',
     'heading-img':'https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_600,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1655295307011-10fa33.jpeg'
     },
     {
@@ -137,10 +140,10 @@ let menssalon=[
     "description":"Even application by professionals especially at the back",
     "desc2":"Complete coverage of grey hair from tip to root",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1615976235101-6d6cc1.jpeg",
-    "package":"COLOR PROVIDED BY USER"
+    "package":"COLOR PROVIDED BY USER", 'buttonadd':'Add'
     },
     {
-    "name":"Clean Shave/Moustache Grooming",
+    "name":"Clean Shave/Moustache Grooming", 'buttonadd':'Add',
     "rating":"4.83 (56K)",
     "price":"₹149",
     "time":"20 mins",
@@ -154,12 +157,12 @@ let menssalon=[
     "description":"Get an even beard shape, covering all hard to reach areas",
     "desc2":"Get customized styles from our professionally trained stylists",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/home-screen/1629192918292-196558.jpeg",
-    'heading':"Shave/Beard Grooming"
+    'heading':"Shave/Beard Grooming", 'buttonadd':'Add'
     },
     {
     "name":"Beard Color with Product",
     "rating":"4.71 (968)",
-    "price":"₹199",
+    "price":"₹199", 'buttonadd':'Add',
     "time":"30 mins",
     "description":"Colour patchy grey beards with a truly natural look",
     "desc2":"Best quality products to ensure a natural looking color",
@@ -170,7 +173,7 @@ let menssalon=[
     "rating":"4.79 (22.1K)",
     "price":"Starts at ₹399",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1651666576469-ed8a95.png",
-    'heading':'Face Care'
+    'heading':'Face Care', 'buttonadd':'Add'
     },
     {
     "name":"Anti-pollution Cleanup",
@@ -180,10 +183,10 @@ let menssalon=[
     "description":"Activated charcoal absorb impurities, prevent skin damage",
     "desc2":"Cleanses excess oil for an energized skin",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1606455920469-0f25d3.jpeg",
-    "package":"FOR DRY SKIN"
+    "package":"FOR DRY SKIN", 'buttonadd':'Add'
     },
     {
-    "name":"Oil Reduction Cleanup",
+    "name":"Oil Reduction Cleanup", 'buttonadd':'Add',
     "rating":"4.77 (5.1K)",
     "price":"₹699",
     "time":"35 mins",
@@ -192,7 +195,7 @@ let menssalon=[
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1606455911696-01c51e.jpeg"
     },
     {
-    "name":"Skin Brightening Facial",
+    "name":"Skin Brightening Facial", 'buttonadd':'Add',
     "rating":"4.77 (9.3K)",
     "price":"₹1,399",
     "time":"1 hr 5 mins",
@@ -201,7 +204,7 @@ let menssalon=[
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1651660868642-a7d8db.png"
     },
     {
-    "name":"Mulberry & Saffron Facial",
+    "name":"Mulberry & Saffron Facial",'buttonadd':'Add',
     "rating":"4.78 (4.2K)",
     "price":"₹1,399",
     "time":"1 hr 5 mins",
@@ -214,7 +217,8 @@ let menssalon=[
     "rating":"4.83 (95.7K)",
     "price":"Starts at ₹99",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/luminosity/1651660884996-1c3ba4.png",
-    'heading':'Massage Thearapy'
+    'heading':'Massage Thearapy',
+    'buttonadd':'Add'
     },
     {
     "name":"Neck & Shoulder Massage",
@@ -224,7 +228,7 @@ let menssalon=[
     "description":"Relaxing Neck & Shoulder Massage",
     "desc2":"Eases tense and sore muscles",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1609925335989-eccf3c.jpeg",
-    "package":"WFH SPECIAL"
+    "package":"WFH SPECIAL", 'buttonadd':'Add'
     },
     {
     "name":"Anti Dandruff - Head Massage",
@@ -233,16 +237,86 @@ let menssalon=[
     "description":"Reduces dandruff, itchy and flaky scalp",
     "desc2":"Onion, curry leaf & neem oil that heal & prevent hair damage",
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/home-screen/1631336215990-e722e8.jpeg",
-    "package":"HAIRWASH NOT INCLUDED"
+    "package":"HAIRWASH NOT INCLUDED", 'buttonadd':'Add'
     },
     {
     "name":"Kid's Head Massage",
     "rating":"4.87 (284)",
     "price":"Starts at ₹149",
     "description":"Relaxing, child friendly massage",
-    "desc2":"Helps increase focus & concentration",
+    "desc2":"Helps increase focus & concentration", 'buttonadd':'Add',
     "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto,w_96,dpr_1,fl_progressive:steep,q_auto/images/growth/home-screen/1618237381827-c01ef1.jpeg"
-    }
+    },
+    {
+      'heading':'Customer Riviews',
+      'name2':'Avg. user rating',
+      'totalrating':'4.75',
+      'totalview':'974K reviews',
+      
+    },
+    {
+      "name":"Sanjeet",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"Nothing in perticular",
+      'ratings':5,
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
+    {
+      'ratings':5,
+      "name":"Basant",
+      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "price":"He was very polite",
+      'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
+    },
     ]
     
   
@@ -270,7 +344,11 @@ let menssalon=[
 
      let name=document.createElement('h3')
      name.innerText=el.name
+     if(el.name==undefined){
+      name.innerText=" "
+    }
 
+      
      let heading=document.createElement('h1')
      heading.innerText=el.heading
      if(el.heading==undefined){
@@ -279,8 +357,10 @@ let menssalon=[
 
 
      let rating=document.createElement('span')
-     rating.innerText=el.rating
-
+     rating.innerText=  el.rating
+     if(el.rating==undefined){
+      rating.innerText=" "
+    }
      
      let price=document.createElement('p')
      price.innerText=el.price+" "+'.'+" "+el.time
@@ -292,7 +372,7 @@ let menssalon=[
     free.innerText=el.free
     if(el.free==undefined){
       free.innerText=""
-    }
+    } 
 
 
     let hr2=document.createElement('hr')
@@ -328,20 +408,58 @@ let menssalon=[
       desc3.innerText=" "
     }
      let hr=document.createElement('hr')
-
+     
     // let editpackage=document.createElement('h2')
     // editpackage,innerText=el.editpackage
 
    let btn=document.createElement('button')
-   btn.innerText='Add'
+   btn.innerText=el.buttonadd
    btn.style.color='blue'
    btn.className='addbtn'
+   if(el.buttonadd==undefined){
+    btn=""
+   }
 
+   let btn2=document.createElement('button')
+   btn2.innerText=el.editpackage
+   btn2.className='addbtn';
    
 
-  div.append(heading,package,name,rating,price,free,hr,description,desc2,desc3,hr2)
+   if(el.editpackage==undefined){
+   btn2=""
+  }
+
+
+    let image2=document.createElement('img')
+    image2.src=el.img
+
+    if(el.img==undefined){
+      image2.src=""
+    }
+
+    let h2=document.createElement('h2')
+    h2.innerText=el.name2
+    if(el.name2==undefined){
+      h2.innerText=""
+    }
+
+    let h1=document.createElement('h1')
+    h1.innerText=el.totalrating
+
+    if(el.totalrating==undefined){
+      h1.innerText=""
+    }
+    
+  let h4=document.createElement('h4')
+  h4.innerText=el.ratings
+  if(el.ratings==undefined){
+   h4.innerText=""
+
+  }
+
+  div.append(heading,h2,h1,package,image2,name,rating,price,free,hr,description,desc2,desc3,btn2,hr2)
   
-    div2.append(image,btn)
+    div2.append(image,btn,h4)
   cont.append(div,div2)
   // cont2.append(div2)
     })
