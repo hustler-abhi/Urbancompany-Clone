@@ -1,7 +1,7 @@
 :root{
     font-size: 62.5%;
     --purple: rgb(110, 66, 229);
-    --light_purple:rgb(237, 237, 237);
+    --light_purple:rgb(234, 234, 254);
     --primary_green: rgb(7, 121, 76);
     --secondary_green: rgb(36, 163, 70);
     --light_green: #edf7f2;
@@ -24,6 +24,7 @@ body{
     border: none;
     padding: 1rem 2.4rem;
     border-radius: 0.8rem;
+    cursor: pointer;
 }
 .btn_white{
     background-color: white;
@@ -33,6 +34,7 @@ body{
     border: 1px solid var(--light_purple);
     padding: 1rem 2.4rem;
     border-radius: 0.8rem;
+    cursor: pointer;
 }
 .btn_white_active{
     background-color: var(--light_purple);
@@ -42,6 +44,7 @@ body{
     border: 1px solid var(--purple);
     padding: 1rem 2.4rem;
     border-radius: 0.8rem;
+    cursor: pointer;
 }
 .btn_grey{
     background-color: var(--light_grey);
@@ -50,4 +53,5 @@ body{
     border: none;
     padding: 1rem 2.4rem;
     border-radius: 0.8rem;
+    cursor: pointer;
 }
