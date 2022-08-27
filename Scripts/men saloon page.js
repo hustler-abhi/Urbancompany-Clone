@@ -252,11 +252,21 @@ let menssalon=[
       'name2':'Avg. user rating',
       'totalrating':'4.75',
       'totalview':'974K reviews',
+      'five':'865k',
+      'four':'66k',
+      'three':'25k',
+      'two':'8k',
+      'one':'11',
+      'five1':'5',
+      'four1':'4',
+      'three1':'3',
+      'two1':'2',
+      'one1':'11'
       
     },
     {
       "name":"Sanjeet",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"Nothing in perticular",
       'ratings':5,
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
@@ -264,56 +274,56 @@ let menssalon=[
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
     {
       'ratings':5,
       "name":"Basant",
-      "rating":"August 2022 . Bengluru, Karnatak,751007,India",
+      "date":"August 2022 . Bengluru, Karnatak,751007,India",
       "price":"He was very polite",
       'img':'https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_profile,q_auto:low,f_auto,w_48,dpr_1,fl_progressive:steep,q_auto/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg'
     },
@@ -457,24 +467,39 @@ let menssalon=[
     }
 
     let h1=document.createElement('h1')
-    h1.innerText=el.totalrating
+    h1.innerText="★"+el.totalrating
 
     if(el.totalrating==undefined){
       h1.innerText=""
     }
     
   let h4=document.createElement('h4')
-  h4.innerText=el.ratings
+  h4.innerText='★'+el.ratings
   if(el.ratings==undefined){
    h4.innerText=""
 
   }
 
- 
+
+  let totalview=document.createElement('h3')
+  totalview.innerText=el.totalview
+  if(el.totalview==undefined){
+    totalview.innerText=""
+  }
 
 
+  // let fivestar=
+//  let ptag=document.createElement('p')
+//  ptag.innerText=el.date
 
-  div.append(heading,h2,h1,package,image2,name,rating,price,free,hr,description,desc2,desc3,btn2,hr2)
+//  if(el.date==undefined){
+//   ptag.innerText=""
+//  }
+// let rate=document.createElement('h4')
+// rate.innerText='★'+el.five1+el.five
+
+
+  div.append(heading,h2,h1,totalview,package,image2,name,rating,price,free,hr,description,desc2,desc3,btn2,hr2)
   
     div2.append(image,btn,h4)
   cont.append(div,div2)
