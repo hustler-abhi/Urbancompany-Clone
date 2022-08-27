@@ -500,6 +500,17 @@ right: 660px;
 	position: sticky;
 	top: 0px;
  }
+ #display>div{
+	 position: relative;
+	 bottom: 20px;
+	 left: 150px;
+	 color:silver
+ }
+ #display>div:hover{
+	background-color: silver;
+	color: #3f414d;
+ 
+ }
 
 /* Small screens */
 @media all and (min-width: 100px) and (max-width: 400px) {
