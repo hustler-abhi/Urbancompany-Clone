@@ -78,6 +78,11 @@ border-radius: 10px;
 #navbar{
     display: flex;
    
+    position: -webkit-sticky;
+   
+    position: sticky;
+    top: 0%;
+    background-color: white;
 
 }
 #navbar>div{
@@ -134,26 +139,41 @@ border-radius: 10px;
 
 #head{
     display: flex;
-    border: 2px solid red;
+   
    
 }
 #head>div{
     width:50%;
    height: 100%;
-border: 2px solid red;
+   
 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+padding-left: 10px;
+line-height:10px ;
 }
 #cont1{
     display:grid;
     grid-template-columns: 80% 20%;
-
+  
+   
+}
+#imgbtn{
+    text-align: center;
+    margin-top: 20px;
+}
+#cont2{
+   
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top:120px;
+    justify-content: space-around;
    
 }
 #middle{
     display: flex;
 }
 #middle>div{
-    border:2px solid lightcoral;
+   
     width:50%;
     height:400px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -194,9 +214,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6
     justify-content: space-around;
     margin-top: 50px;
 }
-#footer>div>div{
-    border: 1px solid red;
-}
+
 #footer>div>div>p{
     color: grey;
 }
@@ -204,3 +222,12 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6
     width:20%;
     height:20%
 } */
+
+#cartbtn{
+     color: white;
+     background-color: blueviolet;
+     padding: 8px 20px;
+     border: 0;
+     border-radius: 5px;
+
+}
