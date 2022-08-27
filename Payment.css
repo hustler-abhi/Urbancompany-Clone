@@ -27,19 +27,18 @@ body {
 
 #nav1>h2 {
     margin-bottom: -10px;
-    font-size: 24px;
 }
 
 #container {
     align-items: center;
     width: 35vw;
     background-color: #F5F5F5;
+    margin: auto;
+    margin-top: -18px;
     padding-left: 10px;
     padding-bottom: 20px;
-    position: fixed;
-    top: 88px;
-    left: 32%;
-    
+    margin-top: 88px;
+    z-index: 0;
 }
 
 .main {
@@ -143,13 +142,14 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7);
     z-index: 1;
     display: none;
 
 }
+
 
 .popup{
     position: fixed;
@@ -163,6 +163,8 @@ body {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 50px;
+    z-index: 3;
+    border-radius: 20px;
     
 }
 
@@ -184,7 +186,7 @@ body {
  body.popup-active .popup {
      top: 50%;
  }
- body.popup-active .popup.overlay{
+ body.popup-active .popup-overlay{
     display: block;
  }
 
@@ -233,12 +235,11 @@ body {
     border: 0px solid;
     margin-right: 20px;
 }
-
-.popup1{
+.popup1 {
     position: fixed;
     top: -150%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: auto;
     background: #f5f5f5;
     text-align: center;
@@ -246,14 +247,176 @@ body {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 50px;
-    
+    z-index: 10;
+    border-radius: 20px;
 }
+
+.popup-overlay1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 5;
+    display: none;
+
+}
+
+.popup-close-btn1 {
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
 body.popup1-active .popup1 {
     top: 50%;
 }
-body.popup-active .popup1.overlay{
-   display: block;
+
+body.popup1-active .popup-overlay1 {
+    display: block;
 }
+
+.popup1>h3 {
+    text-align: center;
+}
+
+.popup1>p {
+    text-align: center;
+}
+
+#otp {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#submit {
+    background-color: gray;
+    border-radius: 10px;
+    border: 0px solid;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#submitOtp {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*  paytmcss*/
+
+#wallet1>img{
+
+    width: 5%;
+
+
+}        
+.walletPaytm{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    display: none;
+  
+
+}
+
+.walletPaytm1>div{
+    margin-left: 0px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.walletPaytm1>div>img{
+    width: 20%;
+}
+
+.walletPaytm1>h3{
+    margin-left: 0px;
+
+}
+.walletPaytm1{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2px;
+    border-radius: 15px;
+    
+}
+
+.wallet-close-btn{
+    position: absolute;
+    right: 2px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color:  #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+ 
+ }
+  body.walletPaytm1-active .walletPaytm1{
+     top: 50%;
+ }
+ body.walletPaytm1-active .walletPaytm{
+    display: block;
+ } 
+
+ .userInput{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 15px;
+ }
+ .userInput>input{
+    margin: 0px;
+    height: 30px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial;
+    background-color: rgb(180, 178, 178);
+ }
+
+ #input{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+ }
+ #input>button{
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    font-size: 16px;
+    border-radius: 5px;
+ }
 
 
 
