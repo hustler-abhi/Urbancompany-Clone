@@ -20,7 +20,10 @@
       <div id="box">
         <div>Blog</div>
         <div><a href="">Register as a Professional</a></div>
-        <div>Login/Signup</div>
+        <span style="font-size: 18px; cursor: pointer" id="sign" onclick="openNav()">Login/Signup</span>
+        <div id="sout"></div>
+        <div id="mybook"></div>
+        <div id="logout"></div>
       </div>
     </div>
 
@@ -62,6 +65,42 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- Login Section -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times; Please Login to Continue
+      </a>
+      <hr />
+      <div id="phone">
+        <div>
+          <p>+91</p>
+        </div>
+        <div>
+          <input type="text" placeholder="Enter Mobile Number" id="mobile" />
+        </div>
+      </div>
+      <button id="btn" onclick="login()">Continue</button>
+    </div>
+
+    <div id="mySidenav2" class="sidenav2">
+      <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()"
+        >&times; Please Enter OTP to Continue
+      </a>
+      <hr />
+      <div id="textotp">
+        <h2>Enter verification code</h2>
+        <p>
+          We Have Send you a 4 Digit OTP <br /><span id="edit" onclick="edit()"
+            >Edit Mobile Number</span
+          >
+        </p>
+      </div>
+      <div id="otp">
+        <input id="validotp" type="text" />
+      </div>
+      <div id="time"></div>
+      <button id="btn" onclick="login2()">Login</button>
     </div>
 
     <!-- Mid Section -->
