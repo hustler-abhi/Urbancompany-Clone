@@ -1,52 +1,14 @@
-let log_status = localStorage.getItem("login");
-let bookdiv = document.getElementById("mybook");
-let logout = document.getElementById("logout");
-let signoutt = document.getElementById("sout");
-let log_container = document.getElementById("sign");
+let signout = document.getElementById("sign");
+let mybookings = document.getElementById("mybook");
+let customer = document.getElementById("logout");
 
-let flag = false;
-localStorage.setItem("login", flag);
+mybookings.innerText = "My Bookings";
+mybookings.style.display = "none";
+customer.innerText = "Logout-Verified Customer";
+customer.style.display = "none";
 
-let book = document.createElement("div");
-book.innerText = "My Booking";
-book.addEventListener("click", function () {
-  window.location.href = "Bookings.html";
-});
-book.style.display = "none";
-console.log(log_status);
-
-log_container.addEventListener("click", function () {
-  flag = false;
-  localStorage.setItem("login", flag);
-  log_status = localStorage.getItem("login");
-  console.log(log_status);
-  book.style.display = "none";
-  out.style.display = "none";
-
-  log_container.innerText = "Login/Signup";
-  log_container.style.color = "white";
-  log_container.style.cursor = "pointer";
-
-  signoutt.append(log_container);
-});
-
-function append() {
-  if (log_status == true) {
-    alert("Success");
-    document.getElementById("mySidenav2").style.width = "0";
-    document.getElementById("sign").style.width = "0";
-    document.getElementById("sign").innerText = null;
-
-    book.style.display = "block";
-    out.style.display = "block";
-  } else {
-    book.style.display = "none";
-    out.style.display = "none";
-    log_container.innerText = "Login/Signup";
-    log_container.style.color = "white";
-    log_container.style.cursor = "pointer";
-  }
-}
+append();
+// let flag = false;
 
 function myLocation() {
   let selected = document.getElementById("select").value;
@@ -85,33 +47,37 @@ function login() {
 }
 
 function login2() {
-  let otp = "1234";
-
+  let otp = 1234;
   let valid = document.getElementById("validotp").value;
 
   if (valid == otp && valid.length == 4) {
-    alert("Login Successfull");
     flag = true;
     localStorage.setItem("login", flag);
-    log_status = localStorage.getItem("login");
-    console.log(log_status);
+    alert("Login Successfull");
     document.getElementById("mySidenav2").style.width = "0";
-
-    book.style.display = "block";
-    log_container.innerText = "Logout-Verified Customer";
-
-    bookdiv.append(book);
-    append();
-  } else {
-    alert("Enter Valid OTP");
     append();
   }
-
-  document.getElementById("validotp").value = "";
 }
 
-log_container.addEventListener("click", function () {
-  openNav();
+function append() {
+  let login_status = localStorage.getItem("login");
+  if (login_status == "true") {
+    signout.style.display = "none";
+    mybookings.style.display = "block";
+    customer.style.display = "block";
+  } else {
+    signout.style.display = "block";
+    mybookings.style.display = "none";
+    customer.style.display = "none";
+  }
+}
+
+customer.addEventListener("click", function () {
   flag = false;
   localStorage.setItem("login", flag);
+  append();
+});
+
+mybookings.addEventListener("click", function () {
+  window.location.href = "Bookings.html";
 });

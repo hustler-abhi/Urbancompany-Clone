@@ -18,7 +18,9 @@ function colortwo() {
 }
 
 function logouttohome() {
-  window.location.href = "homepage.html";
+  window.location.href = "index.html";
+  flag = false;
+  localStorage.setItem("login", flag);
 }
 
 function home() {
