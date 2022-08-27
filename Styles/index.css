@@ -1,3 +1,8 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #navbar {
   width: 100%;
   height: 60px;
@@ -15,29 +20,27 @@
   margin-top: 10px;
 }
 
-#navbar > div:nth-child(1) {
+#logo {
   width: 10%;
   margin-left: 150px;
 }
 
-#navbar > div:nth-child(2) {
+#box {
   margin-right: 90px;
-  width: 30%;
+  width: 40%;
+  height: 70%;
+  align-items: center;
+  font-size: 18px;
+}
+
+#logo {
   height: 100%;
 }
 
-#navbar > div > img {
-  height: 100%;
-  width: 80%;
-}
-
-#navbar > div > div {
+#box > div {
   justify-content: space-between;
   /* border: 2px solid white; */
-  /* padding-bottom: 5px; */
-}
-h3 {
-  line-height: 5px;
+  padding: 5px;
 }
 
 a {
@@ -48,55 +51,559 @@ a {
 
 #banner {
   width: 100%;
-  height: 520px;
-  border: 2px solid green;
+  display: flex;
+  height: 600px;
+  /* border: 1px solid teal; */
+}
+
+#image {
+  height: 100%;
+  margin-left: 0;
+}
+#ban-image {
+  width: 30%;
+}
+#ban-right {
+  width: 100%;
+}
+#back {
+  position: absolute;
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#section {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(90deg, transparent, #000 28%);
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+#section > div:nth-child(1) {
+  margin-top: 10%;
+}
+#section > div > span {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 18px;
+  margin-right: 11%;
+  color: #bdbdbd;
+}
+#section > h1 {
+  color: white;
+  margin-left: 23%;
+  font-size: 38px;
+}
+#section > p {
+  color: white;
+  font-size: 22px;
+  margin-left: 28%;
+  color: #bdbdbd;
+}
+#loc-div {
+  width: 35%;
+  border: 1px solid white;
+  background-color: white;
+  margin-left: 35%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+#loc-div > p {
+  padding-right: 32%;
+  font-size: 18px;
+}
+#select {
+  padding: 3%;
+  width: 90%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid rgb(210, 207, 207);
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* mid section */
+#cont {
+  height: 400px;
+  width: 90%;
+  /* border: 1px solid green; */
+  margin: auto;
+  margin-top: 60px;
   display: flex;
 }
 
-#banner > div {
+#mid1,
+#mid2 {
   width: 50%;
   height: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  margin: auto;
+  justify-content: space-between;
 }
-
-#banner > div > img {
-  width: 80%;
-  padding-left: 10%;
+#mid1 > div {
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid red; */
 }
-
-.banrightchild {
-  border: 2px solid teal;
-  width: 80%;
-  margin-top: 60px;
-  margin-left: 60px;
+#mid1 > h1 {
+  margin-left: 50px;
+  padding-bottom: 30px;
 }
-
-.banrightchild > span {
+li {
+  display: flex;
+  height: 120px;
+}
+li > div {
+  width: 10%;
+  height: 70px;
+  /* border: 1px solid black; */
+}
+li > div > img {
+  height: 100%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+section > p,
+section > h3 {
+  margin: 0;
+  color: #686666;
   font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 5px;
-  color: #bdbdbd;
+}
+section > h3 {
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
 }
 
-#banner > div:nth-child(2) {
-  background-color: black;
+#mid2 > div {
+  width: 80%;
+  height: 80%;
+  /* border: 1px solid green; */
+  margin: auto;
+  border-radius: 10px;
+  background-color: #f5f9ff;
+  padding-top: 40px;
 }
 
-.banrightchild > h1,
-.banrightchild > p {
-  color: white;
+#mid2 > div > div {
+  height: 45%;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+#mid2 img {
+  height: 100%;
 }
 
-.banrightchild > div {
+#mid2 h1 {
+  margin-left: 51px;
+  font-size: 35px;
+}
+
+#mid2 p {
+  margin-left: 53px;
+  font-size: 22px;
+}
+#bot {
+  width: 85%;
+  height: 500px;
+  /* border: 1px solid green; */
+  margin: auto;
+  margin-top: 120px;
+  display: flex;
+}
+#bot > div {
   width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#andimg {
+  display: flex;
+}
+#andimg > div {
+  margin-left: 40px;
+}
+#andimg img {
+  height: 100%;
+}
+#bot > div > div {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+#bot h1 {
+  margin-top: 100px;
+  font-size: 40px;
+}
+#bot p {
+  font-size: 20px;
+}
+#phone {
+  width: 90%;
+  height: 50px;
+  /* border: 1px solid green; */
+  margin-top: 60px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#phone > div:nth-child(1),
+#phone > div:nth-child(3) {
+  width: 20%;
+  display: flex;
+}
+#phone > div:nth-child(2) {
+  width: 60%;
+}
+#phone > div:nth-child(1) > h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#phone img {
+  height: 40%;
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+input {
+  height: 90%;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 20px;
+  border: 0;
+}
+#phone button {
+  width: 90%;
+  height: 100%;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#select > div {
+  width: 40%;
+  height: 100px;
   border: 1px solid white;
 }
 
-.banrightchild > p {
+#container {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.child {
+  display: flex;
+  gap: 28px;
+  padding-left: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  /* line-height: 10px; */
+  cursor: pointer;
+  color: #9b9b9b;
+}
+.child > p:hover {
+  color: white;
+}
+.child + h3 {
+  color: white;
+  padding-left: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
 }
-.banrightchild > div > div > p {
+h3 + h4 {
   color: white;
-  font-size: 20px;
-  padding-left: 10%;
+  padding-left: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#om {
+  color: white;
+}
+#endSecBot > img {
+  width: 30%;
+  margin-left: 150px;
+  margin-bottom: 30px;
+}
+
+hr {
+  height: 0px;
+  width: 86%;
+  border: 0.5px solid rgb(28, 28, 28);
+  background-color: rgb(24, 24, 24);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#new_media {
+  display: flex;
+  gap: 30px;
+  width: auto;
+  background-color: black;
+  cursor: pointer;
+}
+
+.media > img {
+  background-color: white;
+  border-radius: 20px;
+  width: 150%;
+  margin-top: 18px;
+}
+#bottom {
+  display: flex;
+}
+
+#logo2 {
+  width: 15%;
+  margin-left: 250px;
+  margin-top: -20px;
+}
+#apple {
+  border-radius: 5%;
+  width: 9%;
+  height: 30%;
+  margin-right: 50px;
+  border: 1px solid white;
+}
+
+@media all and (min-width: 521px) and (max-width: 800px) {
+  .child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #container {
+    width: 100%;
+    margin-top: 48%;
+  }
+  .child {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+
+/* Small screens */
+@media all and (min-width: 321px) and (max-width: 520px) {
+  .child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #container {
+    width: 100%;
+  }
+  .child {
+    gap: 5px;
+    font-size: 15px;
+    width: 100%;
+  }
+}
+/* Media Queries */
+
+/* 1.Medium Screen */
+
+@media all and (min-width: 581px) and (max-width: 890px) {
+  #logo {
+    margin-left: 90px;
+  }
+  #box {
+    width: 60%;
+    margin-right: 40px;
+  }
+  #banner {
+    height: 400px;
+  }
+
+  #section {
+    height: 400px;
+  }
+  #section > div > span {
+    font-size: 14px;
+    margin-right: 5%;
+  }
+  #section > h1 {
+    margin-left: 26%;
+    font-size: 25px;
+  }
+  #section > p {
+    font-size: 14px;
+    margin-left: 30%;
+  }
+  #loc-div {
+    width: 60%;
+    margin-left: 32%;
+    margin-top: 3%;
+    border-radius: 10px;
+  }
+
+  #loc-div > p {
+    padding-right: 32%;
+    font-size: 17px;
+  }
+  #select {
+    padding: 3%;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  #cont {
+    flex-direction: column;
+  }
+  #mid1 {
+    width: 100%;
+  }
+
+  #mid2 {
+    width: 80%;
+    margin-top: 80px;
+  }
+  #mid2 > div {
+    width: 100%;
+  }
+  section {
+    margin-left: 30px;
+  }
+  #bot {
+    flex-direction: column;
+    margin-top: 400px;
+    gap: 40px;
+  }
+  #bot > div {
+    width: 90%;
+  }
+  #phone {
+    width: 100%;
+  }
+  #phone > div:nth-child(1) {
+    width: 100%;
+  }
+  #container {
+    margin-top: 50%;
+  }
+}
+
+/* 2.Small Screens */
+
+@media all and (min-width: 320px) and (max-width: 580px) {
+  #logo {
+    margin-left: 40px;
+  }
+  #box > div:nth-child(1),
+  #box > div:nth-child(2) > a {
+    color: black;
+  }
+  #navbar {
+    width: 120%;
+  }
+  #banner {
+    height: 250px;
+  }
+  #image {
+    height: 100%;
+    margin-left: 60%;
+  }
+  #ban-right {
+    margin-top: -210%;
+  }
+  #section {
+    height: auto;
+    background: linear-gradient(black, #000 28%);
+    text-align: center;
+  }
+  #section > div > span {
+    font-size: 14px;
+    margin-right: 5%;
+  }
+  #section > h1 {
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  #section > p {
+    font-size: 14px;
+    margin-left: 4%;
+  }
+  #loc-div {
+    width: 60%;
+    margin-left: 22%;
+    margin-top: 3%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  #loc-div > p {
+    padding-right: 22%;
+    font-size: 17px;
+  }
+  #select {
+    padding: 3%;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  #cont {
+    flex-direction: column;
+  }
+  #mid1 {
+    width: 100%;
+  }
+
+  #mid2 {
+    width: 100%;
+    margin-top: 80px;
+  }
+  #mid2 > div {
+    width: 100%;
+  }
+  section {
+    margin-left: 40px;
+  }
+  #bot {
+    flex-direction: column;
+    margin-top: 400px;
+    gap: 40px;
+  }
+  #bot > div {
+    width: 90%;
+  }
+  #phone {
+    width: 100%;
+  }
+  #phone > div:nth-child(1),
+  #phone > div:nth-child(3) {
+    width: 40%;
+  }
+  #andimg img {
+    height: 80%;
+    gap: 0;
+  }
 }
