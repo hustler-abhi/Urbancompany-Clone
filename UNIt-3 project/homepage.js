@@ -10,7 +10,7 @@ window.onscroll=function(){
 
  }
  let is;
-	let arr = ['salon for men', 'salon for women', 'air purifier','massages for men','hair services for woman','spa for women']
+	let arr = ['salon for men', 'salon for women', 'air purifier','massages for men','hair services for woman','spa for women','salon prime']
 	function main(func, delay) {
 
 		if (is) {
@@ -46,11 +46,43 @@ window.onscroll=function(){
 		div.append(p)
 		document.querySelector('#display').append(div)
 		div.addEventListener('click',()=>{
-			window.location.href='abhi.html'
+			window.location.href='men saloon page.html'
 		})
 	}
 
-let locaate=localStorage.getItem('location')
-document.querySelector('button').innerText=locaate
+	let abhi=document.querySelectorAll('.home>div');
+ 
 
+	for(let i=0;i<abhi.length;i++){
+		abhi[i].addEventListener('click',redirect)
+	}
+
+function redirect(){
+	window.location.href='men saloon page.html'
+}
+
+let mid_sec1=document.querySelectorAll('#midesec1>div');
+
+
+for(let i=0;i<mid_sec1.length;i++){
+	mid_sec1[i].addEventListener('click',()=>{
+		window.location.href='men saloon page.html'
+	})
+}
+let mid_sec2=document.querySelectorAll('#midesec2>div');
+
+
+for(let i=0;i<mid_sec1.length;i++){
+	mid_sec2[i].addEventListener('click',()=>{
+		window.location.href='men saloon page.html'
+	})
+}
+let nad=document.querySelectorAll('#nad>div');
+for(let i=0;i<nad.length;i++){
+	nad[i].addEventListener('click',()=>{
+		window.location.href='men saloon page.html'
+	})
+}
+let place=localStorage.getItem('location')
+document.querySelector('button').innerText=place
  

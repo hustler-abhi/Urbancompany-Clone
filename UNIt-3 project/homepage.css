@@ -511,7 +511,10 @@ right: 660px;
 	color: #3f414d;
  
  }
-
+ 
+ #nad>div:hover{
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
 /* Small screens */
 @media all and (min-width: 100px) and (max-width: 400px) {
 		 
