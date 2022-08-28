@@ -72,7 +72,7 @@ for(let i=0;i<mid_sec1.length;i++){
 let mid_sec2=document.querySelectorAll('#midesec2>div');
 
 
-for(let i=0;i<mid_sec1.length;i++){
+for(let i=0;i<mid_sec2.length;i++){
 	mid_sec2[i].addEventListener('click',()=>{
 		window.location.href='men saloon page.html'
 	})

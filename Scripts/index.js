@@ -15,7 +15,7 @@ function myLocation() {
 
   localStorage.setItem("location", selected);
 
-  window.location.href = "UNIt-3 project/homepage.html";
+  window.location.href = "homepage.html";
 }
 
 function openNav() {
