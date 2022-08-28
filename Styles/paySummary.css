@@ -416,6 +416,7 @@ hr{
     left: 27%;
     z-index: 2;
     border-radius: 20px;
+    flex-direction: column;
     font-family: Sauce_Grotesk;
 }
 
