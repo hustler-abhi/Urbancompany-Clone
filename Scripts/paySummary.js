@@ -34,7 +34,7 @@ slotContainer.style.display = 'none';
 closebtn.style.display = 'none';
 
 let updateServiceList = () => {
-    services.innerHTML = "";
+    // services.innerHTML = "";
     // let div = document.createElement('div');
     console.log("In");
     cartData.forEach((e,i)=>{
