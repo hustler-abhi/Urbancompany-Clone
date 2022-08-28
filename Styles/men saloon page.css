@@ -240,3 +240,7 @@ line-height:10px ;
 #cont2>div{
     margin-bottom: 70px;
 }
+#carttotalAmount{
+    display: flex;
+    justify-content: space-around;
+}
