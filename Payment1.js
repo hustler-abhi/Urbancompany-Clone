@@ -7,7 +7,10 @@ for(let i=0;i<payAmt.length;i++){
     payAmt[i].innerText=totalAmount
 }
 
-
+let backBtn = document.querySelector("#leftArrow");
+backBtn.addEventListener("click", function (){
+    window.location.href = "paySummary.html";
+});
 
 let openPopupBtn = document.querySelector("#paytm1");
 let closePopupBtn = document.querySelector(".popup-close-btn");
