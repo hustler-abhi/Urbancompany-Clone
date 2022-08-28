@@ -188,6 +188,6 @@ closebtn.addEventListener('click',() => {
 });
 
 checkoutBtn.addEventListener('click',() => {
-    window.location.href = "Payment.html";
+    window.location.href = "Payment1.html";
 });
 
