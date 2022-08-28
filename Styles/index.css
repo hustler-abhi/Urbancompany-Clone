@@ -19,7 +19,10 @@ body {
   justify-content: space-around;
   margin-top: 10px;
 }
-
+#mybook,
+#logout {
+  cursor: pointer;
+}
 #logo {
   width: 10%;
   margin-left: 150px;
@@ -339,7 +342,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
 }
-h3 + h4 {
+h3 + h4,
+.child + h4 {
   color: white;
   padding-left: 120px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -412,6 +416,131 @@ hr {
   }
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav,
+.sidenav2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sidenav a {
+  padding-right: 60px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav2 a {
+  padding-right: 30px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 0;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+}
+.sidenav2 .closebtn2 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+}
+.closebtn {
+  padding-right: 10px;
+}
+
+#phone {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  /* border: 2px solid green; */
+  margin-left: 10px;
+  padding: 2%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#phone > div:nth-child(1) {
+  width: 10%;
+}
+#phone > div:nth-child(2) {
+  width: 90%;
+  height: auto;
+}
+hr {
+  margin-bottom: 20px;
+}
+#phone p {
+  margin-top: 17px;
+  font-size: 18px;
+}
+#mobile {
+  width: 95%;
+  padding: 4px;
+  border: 0;
+  font-size: 18px;
+}
+#btn {
+  width: 80%;
+  padding: 4%;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#textotp {
+  text-align: center;
+}
+
+#edit {
+  color: blue;
+  cursor: pointer;
+}
+#otp {
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+#otp > input {
+  width: 90%;
+  padding: 5px;
+  border: 2px solid grey;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 /* Small screens */
 @media all and (min-width: 321px) and (max-width: 520px) {
   .child {
