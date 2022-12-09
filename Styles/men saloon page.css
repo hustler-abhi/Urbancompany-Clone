@@ -1,3 +1,13 @@
+@font-face {
+    /* font-family: Sauce_Grotesk_Light;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Light.ttf"); */
+    font-family: Sauce_Grotesk;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Regular.ttf");
+}
+body{
+    font-family: Sauce_Grotesk;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -226,13 +236,24 @@ line-height:10px ;
 
 #cartbtn{
     
-     background-color:pink;
+     background-color:var(--purple);
      padding: 13px 26px;
      border: 0;
      border-radius: 5px;
 
 }
 
+#cartbtn>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
 .offer{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 5px 15px;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings Page</title>
+    <link rel="stylesheet" href="./Styles/Bookings.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="nav" onclick="logo()">
+        <img
+          src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/images/supply/partner-training/1628575858610-5b0ae4.png"
+          alt=""
+        />
+      </div>
+      <div class="nav">
+        <div><h3>Blog</h3></div>
+        <div><h3>Register as a Professional</h3></div>
+        <div><h3>My Bookings</h3></div>
+        <div>
+          <h3 id="log" onclick="logouttohome()">Logout-Verified Customer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="booking">
+      <h2>My Bookings</h2>
+      <div id="book">
+        <div onclick="colorone()" id="one">ONGOING</div>
+        <div onclick="colortwo()" id="two">HISTORY</div>
+      </div>
+    </div>
+
+    <div id="button">
+      <p>You dont have any active projects now</p>
+      <button id="btn" onclick="home()">BOOK A SERVICE</button>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/Bookings.js"></script>

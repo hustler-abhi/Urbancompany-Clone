@@ -382,10 +382,10 @@ hr{
     font-size: 1.5rem;
 }
 
-#selectPlan{
+/* #selectPlan{ */
     /* position: fixed;
     top: 0; */
-}
+
 
 #selectPlan>p{
     font-weight: 600;

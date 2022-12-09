@@ -1,5 +1,16 @@
 //1.pay bt card
 
+let totalAmount=localStorage.getItem("payAmount")
+let payAmt=document.querySelectorAll(".payAmt")
+
+for(let i=0;i<payAmt.length;i++){
+    payAmt[i].innerText=totalAmount
+}
+
+let backBtn = document.querySelector("#leftArrow");
+backBtn.addEventListener("click", function (){
+    window.location.href = "paySummary.html";
+});
 
 let openPopupBtn = document.querySelector("#paytm1");
 let closePopupBtn = document.querySelector(".popup-close-btn");
@@ -50,12 +61,18 @@ submit.addEventListener("click", myEnter)
             cvv:document.getElementById("cvv").value,
         }
         
-        if(obj.cardNum==="" || obj.cardNum.length<19 || obj.validtill.length==="" ||obj.cvv.length===""){
-            alert("please Enter Valid Data")
-        }else{
+        if( obj.cardNum.length<19 ){
+            alert("please Enter Valid card Number")
+        }else if(obj.validtill.length<7){
+            alert("please Enter Valid card data")
+        }else if(obj.cvv.length<3){
+            alert("please Enter Valid card data")
+        }
+        else{
             document.body.classList.add("popup1-active")
         }
    }
+  
 
 closeOtp.addEventListener("click", function () {
     document.body.classList.remove("popup1-active")
@@ -73,6 +90,7 @@ submitOtp.addEventListener("click",otpSub)
         alert("please Enter Valid Data")
     }else{
         alert("Payment done successfully")
+        window.location.href="homepage.html"
     }
    }
 
@@ -106,3 +124,76 @@ submitOtp.addEventListener("click",otpSub)
        time-- ;
          
    }
+
+   let paytmverify=document.getElementById("paytmverify")
+
+   paytmverify.addEventListener("click" ,subpaytm)
+
+     function subpaytm(){
+        let userpass=document.querySelector(".userpass").value
+        if(userpass.length<1){
+            alert("please Enter Valid Data")
+        }else{
+            alert("Payment done successfully")
+            window.location.href="homepage.html"
+        }
+        
+     }
+
+    //  upi payment
+    let upi = document.querySelector("#upi");
+    let upiClose = document.querySelector(".upiClose");
+
+
+    upi.addEventListener("click", upifun)
+
+    function upifun() {
+        document.body.classList.add("upipopup-active")
+    }
+
+    upiClose.addEventListener("click", function () {
+        document.body.classList.remove("upipopup-active")
+    })
+
+    let upisubmit = document.getElementById("upisubmit")
+    let upiClose1 = document.querySelector(".upiClose1");
+
+    upisubmit.addEventListener("click", submitupi)
+
+
+    function submitupi(event) {
+        let upicardNum=document.getElementById("upicardNum").value
+
+        if(upicardNum.length<14){
+            alert("please Enter Valid Data")
+        }else{
+            document.body.classList.add("upipopup1-active")
+        }
+
+    }
+    let submitupiOtp=document.getElementById("submitupiOtp")
+    submitupiOtp.addEventListener("click",subotp)
+
+    function subotp(event){
+
+        let upipin=document.getElementById("upipin").value
+
+        console.log(upi.length)
+
+        if(upipin.length<4){
+            alert("please Enter Valid Data")
+        }else{
+            alert("Payment done successfully")
+            window.location.href="homepage.html"
+        }
+
+
+
+    }
+
+    upiClose1.addEventListener("click", function () {
+        document.body.classList.remove("upipopup1-active")
+    })
+
+
+    

@@ -29,6 +29,18 @@ i.custom{
     margin-top: 2rem;
     font-family: Sauce_Grotesk;
 }
+
+nav{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+}
+
+nav>p{
+    font-size: 1.8rem;
+}
 #packageSection{
     display: flex;
     flex-direction: column;
@@ -173,122 +185,6 @@ i.custom{
     
 }
 
-.box_green{
-    background-color: #EDF7F2;
-}
-.box_purple{
-    background-color: #F2F0FF; 
-}
-.box_yellow{
-    background-color: #FFF7D6;
-}
-.box_brown{
-    background-color: #FDF3F2;
-}
-#reviews{
-    margin-bottom: 2rem;
-}
-#reviews>p{
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    color: var(--primary_grey); 
-}
-
-.load_review_btn{
-    padding: 1rem;
-    position: relative;
-    left: 11vw;
-    font-weight: 600;
-    font-family: Sauce_Grotesk;
-    color: var(--primary_grey);
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid lightgrey;
-    cursor: pointer;
-}
-
-
-#review_container{
-    width: 100%;
-}
-
-.review{
-    width: 100%;
-}
-.reviewer_details{
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.reviewer_details>img{
-    border-radius: 8px;
-}
-.reviewer_details>ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reviewer_details>ul>li>p:first-child{
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-.reviewer_details>ul>li:first-child>p:nth-child(2){
-    font-size: 1.4rem;
-    color: var(--secondary_grey);
-}
-
-.reviewer_details>ul>li>div>p{
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-.reviewer_details>ul>li>div{
-    display: flex;
-    gap: 0.4rem;
-    justify-content: flex-end;
-}
-
-.reviewer_details>ul>li:nth-child(2)>p{
-    font-size: 1.2rem;
-    color: var(--secondary_grey);
-}
-.message{
-    margin: 2rem 0;
-    font-size: 1.4rem;
-    color: var(--primary_grey);
-}
-
-#FAQs>p{
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    color: var(--primary_grey); 
-}
-
-.question{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    color: var(--primary_grey);
-}
-
-.answer{
-    color: var(--primary_grey);
-    font-size: 1.4rem;
-    display: none;
-}
-
-li{
-    list-style: none;
-}
-
 hr{
     height: 1px;
     background-color: var(--light_purple);
@@ -296,23 +192,146 @@ hr{
     border: none;
 }
 
+#membershipDetails{
+    display: flex;
+    gap:3rem;
+    margin: 2rem 0;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.title_time{
+    width:73%;
+}
+
+.title_time>p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--primary_grey);
+}
+
+.title_time>p:nth-child(2){
+    font-size: 1.4rem;
+}
+
+.membershipPrice>p{
+    font-size: 1.4rem;
+}
+
+.membershipPrice>p:nth-child(2){
+    text-decoration: line-through;
+}
+
+.payDetails>p{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.payDetails>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.payDetails>div>p{
+    font-size: 1.4rem;
+}
+
+#membershipDisCost{
+    color: var(--primary_green);
+}
+
+#strThrMemberCost{
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: var(--secondary_grey);
+}
+
+.membershipCost>div{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.Total>p:first-child{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#savedDiscount{
+    background-color: var(--light_green);
+    justify-content: center;
+    gap:1rem;
+    padding: 1rem;
+}
+
+#savedDiscount>p{
+    font-size: 1.4rem;
+    color: var(--primary_green);
+}
+
+#coupons{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#logo_coupon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#offers{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+#offers>p{
+    font-size: 1.4rem;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+#tip{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#tip>p:first-child{
+    font-weight: 600;
+}
+
+#tipAmount{
+    display: flex;
+    gap:2rem;
+}
+
+#tipAmount>button{
+    padding: 0.5rem 2rem;
+    font-family: Sauce_Grotesk;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#tip>p:last-child{
+    font-size: 1.2rem;
+    color: var(--secondary_grey);
+}
+
+
+
+
+
 #CTA{
     position: fixed;
     width: 20%;
     bottom: 0px;
     background-color: white;
-}
-#plusDiscount{
-    background-color: var(--light_green);
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-#plusDiscount>span{
-    color: var(--primary_green);
-    font-size: 1.4rem;
 }
 
 #CTA_btn{
@@ -338,7 +357,7 @@ hr{
 }
 
 #CTA_btn>button{
-    width: 200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,76 +367,268 @@ hr{
     cursor: pointer;
 }
 
-.btn_purple>i{
-    font-size: 1.5rem;
+#bookSlotOverlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#selectPlan{
-    /* position: fixed;
-    top: 0; */
+#closebtn{
+    width: 3rem;
+    height: 3rem;
+    z-index: 3;
+    position: absolute;
+    top: 20vh;
+    left: 70vw;
+    background-color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+    /* paading: 2px; */
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
 }
 
-#selectPlan>p{
+#addressContainer{
+    position: absolute;
+    width: 45vw;
+    height: 30vw;
+    background-color: white;
+    top: 25%;
+    left: 27%;
+    z-index: 2;
+    border-radius: 20px;
+    display: flex;
+    /* gap: 2rem; */
+    /* justify-content: space-between; */
+}
+
+#slotContainer{
+    position: absolute;
+    width: 45vw;
+    height: 30vw;
+    background-color: white;
+    top: 25%;
+    left: 27%;
+    z-index: 2;
+    border-radius: 20px;
+    flex-direction: column;
+    font-family: Sauce_Grotesk;
+}
+
+#slotContent{
+    border-radius: 20px;
+    position: relative;
+    overflow-y: scroll;
+    width: 45vw;
+    height: 28vw;
+}
+
+#addressDetails{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgb(246, 246, 246); */
+    border-radius:  0 20px 20px 0;
+    font-family: Sauce_Grotesk;
+}
+
+#changeAddress{
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    /* align-items: center; */
+}
+
+#addDetails>p:first-child{
+    font-size: 2rem;
     font-weight: 600;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    color: var(--primary_grey); 
+    margin-bottom: 1rem;
 }
 
-#plans{
+#addDetails>p:last-child{
+    font-size: 1.4rem;
+    color: var(--secondary_grey);
+    line-height: 2.5rem;
+}
+
+#changeAddressBtn{
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+    padding: 0rem 2rem;
+    height: 4rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#inputInfo{
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 1rem;
 }
 
-#plan12, #plan6{
-    border-radius: 8px;
-    border: 1px solid var(--light_grey);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#plan12>div>p:first-child{
-    color: var(--primary_green);
-    text-transform:uppercase;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-#plan12>div>p:nth-child(2), #plan6>div>p:nth-child(1){
+#inputInfo>p{
+    font-size: 1.6rem;
+    color:var(--secondary_grey);
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 
-#plan12>div>div>span:nth-child(2),#plan6>div>div>span:nth-child(2){
+#inputInfo>input{
+    padding: 2rem;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+#homeBtn,#otherBtn{
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+    padding: 0rem 2rem;
+    height: 4rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: var(--secondary_grey);
+}
+
+#addressCTA{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(129, 129, 129, 0.25) 0px -5px 15px;
+}
+
+#saveAddress{
+    padding: 2rem;
+    width: 95%;
+}
+
+iframe{
+    /* border-radius: 20px; */
+    border-radius:  20px 0px 0px 20px;
+}
+
+#slotAddress{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#leftAddSlot{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
     font-size: 1.4rem;
-    text-decoration: line-through;
 }
 
-#plan12>button, #plan6>button{
-    height: 3.6rem;
-}
-
-#noPlan{
+#selectDate{
     margin: 2rem;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#selectDate>p:first-child{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#selectDate>p:nth-child(2){
+    color: var(--secondary_grey);
+}
+
+#dateBtns{
+    display: flex;
+    gap: 2rem;
+}
+
+.dateBox{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    cursor: pointer;
 }
 
-#noPlan>span, #noPlan>i{
-    color: #8a1e08;
+.dateBox>p:nth-child(2){
     font-weight: 700;
-}
-
-#noPlan>i{
     font-size: 1.8rem;
 }
+
+#notice{
+    background-color: var(--light_grey);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#notice>p{
+    font-size: 1.4rem;
+    color: var(--primary_grey);
+}
+
+#serviceTime{
+    margin: 2rem;
+}
+
+#serviceTime>p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#timeSlots{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.timeBox{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+#slotCTA{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(129, 129, 129, 0.25) 0px -5px 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+#saveSlot{
+    padding: 2rem;
+    width: 95%;
+}
+
+
+
 
 @media all and (max-width:820px) and (min-width:426px) {
     #page_container{
@@ -448,3 +659,4 @@ hr{
   }
   
 }
+

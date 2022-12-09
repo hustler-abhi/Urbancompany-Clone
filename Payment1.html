@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Payment.css" />
+    <link rel="stylesheet" href="Payment1.css" />
     <title>Payment Page</title>
 
 </head>
@@ -24,7 +24,7 @@
             <h2>Select Payment Method</h2>
             <div id="payMode">
                 <p id="payhead">Amount to pay rs:</p>
-                <h3 id="payAmt"></h3>
+                <h3 class="payAmt"></h3>
             </div>
 
         </div>
@@ -49,13 +49,13 @@
                 <div id="checkbox">
                     <input id="checkbox1" type="checkbox" />
                     <p>Save the card details for future use except CVV</p>
-    
+
                 </div>
                 <div id="confirm">
-                    <h3 id="payAmt"></h3>
+                    <h3 class="payAmt"></h3>
                     <button id="submit">save and proceed</button>
                 </div>
-    
+
                 <div class="popup-close-btn">&times</div>
             </div>
         </div>
@@ -69,10 +69,7 @@
             <div class="popup-close-btn1">&times</div>
             <button id="submitOtp">Submit</button>
         </div>
-        <!-- <div class="popup-overlay"></div> -->
-        
 
-        
         <div class="main">
             <h3>Wallet</h3>
             <div id="wallet1">
@@ -81,31 +78,30 @@
                 <p>Paytm</p>
             </div>
             <div class="walletPaytm"></div>
-    <div class="walletPaytm1">
-        <div>
-            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_2.0000000298023224/images/monet/customer-app-monet/1622035139912-c6c7d1.png" />
-        </div>
-        
-        <h3>Link Payment</h3>
-        <p> Please enter the 6-digit OTP sent on your mobile number</p>
-        <div class="wallet-close-btn" >&times</div>
-        <div class="userInput">
-            <input type="text" maxlength="1"/>
-            <input type="text" maxlength="1"/>
-            <input type="text" maxlength="1"/>
-            <input type="text" maxlength="1"/>
-            <input type="text" maxlength="1"/>
-            <input type="text" maxlength="1"/>
-        </div>
-        <p id="countdown">1:00</p>
-        <div id="input">
-            <h3 class="payAmt"></h3>
-            <button>verify</button>
-        </div>
+            <div class="walletPaytm1">
+                <div>
+                    <img
+                        src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_2.0000000298023224/images/monet/customer-app-monet/1622035139912-c6c7d1.png" />
+                </div>
 
-    </div>
+                <h3>Link Payment</h3>
+                <p> Please enter the 6-digit OTP sent on your mobile number</p>
+                <div class="wallet-close-btn">&times</div>
+                <div class="userInput">
+                    <input class="userpass" type="text" maxlength="1" />
+                    <input class="userpass" type="text" maxlength="1" />
+                    <input class="userpass" type="text" maxlength="1" />
+                    <input class="userpass" type="text" maxlength="1" />
+                    <input class="userpass" type="text" maxlength="1" />
+                    <input class="userpass" type="text" maxlength="1" />
+                </div>
+                <p id="countdown">1:00</p>
+                <div id="input">
+                    <h3 class="payAmt"></h3>
+                    <button id="paytmverify">verify</button>
+                </div>
 
-
+            </div>
         </div>
 
         <div class="main">
@@ -114,8 +110,33 @@
                 <img
                     src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category,q_auto:low,f_auto,dpr_1.25/images/monet/customer-app-monet/1622035138755-c9ea9d.png" />
                 <p>Pay via another UPI ID</p>
-
             </div>
+            <div class="upi-overlay"></div>
+            <div class="upipopup">
+                <h3>Pay via UPI</h3>
+                <input id="upicardNum" type="text" maxlength="14" placeholder="Enter UPI ID" />
+                <P id="examp">Eg.8421746478@upi</P>
+                <div id="upicheckbox">
+                    <input id="upicheckbox1" type="checkbox" />
+                    <p>Save my UPI ID securarly</p>
+    
+                </div>
+                <div id="confirm">
+                    <h3 class="payAmt"></h3>
+                    <button id="upisubmit">save and proceed</button>
+                </div>
+                <div class="upiClose">&times</div>
+            </div>
+        </div>
+        <div class="upi-overlay1"></div>
+        <div class="upipopup1">
+            <h3>Enter OTP</h3>
+            <p>Check your mobile for OTP</p>
+            <div id="Enter_upi">
+                <input id="upipin" type="text" maxlength="4"  placeholder="Enter OTP" />
+            </div>
+            <div class="upiClose1">&times</div>
+            <button id="submitupiOtp">Submit</button>
         </div>
 
         <div class="main">
@@ -131,7 +152,7 @@
         <div class="main">
             <h3>Pay after services</h3>
             <div id="cash">
-                <p>Pay online after services</p>
+                <p>Pay by cash after services</p>
             </div>
         </div>
     </div>
@@ -141,4 +162,4 @@
 
 </html>
 
-<script src="Payment.js"></script>
+<script src="Payment1.js"></script>
